@@ -1,0 +1,26 @@
+{
+  "name": "gnomebrew",
+  "version": "1.0.0",
+  "description": "Munis Pattern Library",
+  "main": "mpl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinlo/gitproj.git"
+  },
+  "author": "Nick Andrews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quinlo/gitproj/issues"
+  },
+  "homepage": "https://github.com/quinlo/gitproj#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "flexboxgrid": "^6.3.1",
+    "node-sass": "^4.5.2",
+    "node-sass-middleware": "^0.11.0"
+  }
+}

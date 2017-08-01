@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+
+<head>
+    <title>Munis Pattern Library</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+</head>
+
+<body class="mdc-typography demo-body">
+    {{>header}}
+    <div class="demo-content mdc-toolbar-fixed-adjust">
+        {{>leftnav}}
+        <main class="demo-main">
+            <div class="demo-viewer">
+                <div class="guidelines">
+                    {{#if pageTitle}}
+                    <h1>{{pageTitle}}</h1>
+                    {{>tabs}}
+                    {{/if}}
+                    
+                    {{{body}}}
+                </div>
+                </div>
+        </main>
+        </div>
+
+        <script src="/assets/js/tabs.js"></script>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script>
+            window.mdc.autoInit();
+        </script>
+</body>
