@@ -209,6 +209,25 @@ font-size: 13px;
   color: #d32f2f;
 }
 
+.hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 360px;
+    min-height: 360px;
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
 
 .guidelinesColumns {
   display: -webkit-box;
