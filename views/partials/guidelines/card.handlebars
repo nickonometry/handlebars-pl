@@ -1,0 +1,1023 @@
+<div class="guidelines">
+    <p>A card is a sheet of material that serves as an entry point to more detailed information.</p>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Cards may contain a photo, text, and a link about a single subject. They may display content containing elements
+                    of varying size, such as photos with captions of variable length. </p>
+                <br />
+                <p>A card collection is a layout of cards on the same plane.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h4>Usage</h4>
+                <p>Cards display content composed of different elements whose size or supported actions vary.</p>
+                <br />
+                <h4>Supported gestures</h4>
+                <p>Swipe</p>
+                <p>Pick-up-and-move</p>
+                <br />
+                <h4>Related components</h4>
+                <p>Grid lists</p>
+                <br />
+                <h4>For developers</h4>
+                <p>Android cards</p>
+                <p>Polymer cards</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards.png" width="360" /><br />
+
+            </div>
+        </div>
+    </div>
+
+    <h2>Usage</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Cards are a convenient means of displaying content composed of different elements. They’re also well-suited
+                    for showcasing elements whose size or supported actions vary, like photos with captions of variable length.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards1.png" width="760" /><br />
+                <p>Example of a card</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>A card collection is coplanar, or a layout of cards on the same plane.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards2.png" width="360" /><br />
+                <p>Example of a card collection</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards3.png" width="360" /><br />
+                <p>Example of a card collection</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>When to use</h3>
+
+                <p>Use a card layout when displaying content that:</p>
+                <ul>
+                    <li>As a collection, comprises multiple data types, such as images, movies, and text</li>
+                    <li>Does not require direct comparison (a user is not directly comparing images or text)</li>
+                    <li>Supports content of highly variable length, such as comments</li>
+                    <li>Contains interactive content, such as +1 buttons or comments</li>
+                    <li>Would otherwise be in a grid list but needs to display more content to supplement the image</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards6.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>1. Cards have rounded corners.</p>
+                <p>2. Cards can have multiple actions.</p>
+                <p>3. Cards can be dismissible and rearranged.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards7.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>This is a tile, not a card.</p>
+                <p>1. Tiles have square corners.</p>
+                <p>2. Tiles have no more than two actions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards8.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>A quickly scannable list, instead of cards, is an appropriate way to represent homogeneous content that doesn't
+                    have many actions.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards9.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>The use of cards here distracts the user from being able to quickly scan. These list items are also not dismissable,
+                    so having them on separate cards is confusing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards10.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Grid tiles are a clean and lightweight way to present a gallery of images.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards11.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Cards are unnecessary in a gallery of images (homogeneous content).</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Content</h2>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Cards provide context and an entry point to more robust information and views, and their content and quantity
+                    can vary greatly. Cards within a card collection can each contain a unique data set, such as a checklist
+                    with an action, a note with an action, and a note with a photo.</p>
+                <br />
+                <p>Don't overload cards with extraneous information or actions.</p>
+                <br />
+                <h3>Content hierarchy</h3>
+                <p>Use hierarchy within the card to direct users’ attention to the most important information. For example,
+                    place primary content at the top of the card, or use typography to emphasize primary content. </p>
+
+                <p>Images can reinforce other content in a card. However, their size and placement within the card depends on
+                    whether images are the primary content or are being used to supplement other content on the card. </p>
+
+                <h3>Background images </h3>
+                <p>Text is most legible when placed on a solid color background with a sufficient contrast ratio to the text.
+                    Text placed on image backgrounds should preserve text legibility.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_content1.png" width="360" /><br />
+                <p>This card collection contains cards with varied layouts.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_content3.png" width="360" /><br />
+                <p>Typography can emphasize primary content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_content2.png" width="360" /><br />
+                <p>This card collection contains cards with varied content types and layouts.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_content4.png" width="360" /><br />
+                <p>This card collection contains cards with varied layouts and content hierarchy.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Behavior</h2>
+    <p>Cards have a constant width and variable height. The maximum height is limited to the height of the available space on
+        a platform, but it can temporarily expand (for example, to display a comment field).</p>
+    <br />
+    <p>Cards do not flip over to reveal information on the back.</p>
+    <br />
+    <h3>Supported gestures</h3><br />
+    <p>Card gestures should be consistently implemented within a card collection.</p>
+
+    <p>Supported gestures include:</p>
+    <ul>
+        <li>The swipe gesture may be used on a per-card basis. Limit swipe gestures within a view so that they don’t overlap
+            with one another. For example, a swipeable card should not contain a swipeable image carousel, so that only a
+            single action occurs when the card is swiped.</li>
+        <li>The pick-up-and-move gesture may be used if it is important for the user to be able to sort cards within a collection.
+            But consider if filtering or sorting would better organize the content.</li>
+    </ul>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Card collection filtering and sorting</h3>
+                <p>Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other
+                    parameters.
+                </p>
+                <ul>
+                    <li>The first item in the collection is positioned at the top left.</li>
+                    <li>The order proceeds left to right and top to bottom</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_behavior1.png" width="760" /><br />
+                <p>Card sorting from left to right, top to bottom.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Scrolling</h3>
+                <p>Card collections only scroll vertically.</p>
+                <br />
+                <p>Card content that exceeds the maximum card height is truncated and does not scroll, but the card can be expanded.
+                    Once expanded, the card may exceed the maximum height of the view. In this case, the card will scroll
+                    with the card collection.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_behavior2.png" width="360" /><br />
+                <p>Card content that exceeds the maximum card height is truncated and does not scroll</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_behavior5.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Don't</p>
+                <p>Cards may be expanded to reveal more content, without using scrolling.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_behavior4.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>On mobile, avoid placing scrollable space within a card, as it could cause two sets of scroll bars to be
+                    displayed, if one is already present.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_behavior3.png" width="760" /><br />
+                <p>On desktop, card content can expand and scroll internally</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Card focus</h3>
+                <p>When traversing through focus points on a card, all focusable elements are visited before moving to the next
+                    card.
+                </p>
+                <br />
+                <p>For interfaces that depend on focus traversal for navigation (D-pad and keyboard), cards should have either
+                    a primary action or open a new view containing primary and supplemental actions.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_behavior6.png" width="760" /><br />
+                <p>Action selected during focus traversal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_behavior7.png" width="760" /><br />
+                <p>Expanded supporting text made visible, with the focus then placed on a supplemental action</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Actions</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>The primary action in a card is typically the card itself.
+                    <br />
+                    <p>Supplemental actions can vary from card to card in a collection, depending on the content type and expected
+                        outcome; for example, playing a movie versus opening a book. Within cards in a collection, position
+                        actions consistently.</p>
+                    <br />
+                    <h3>Supplemental actions</h3>
+                    <br />
+                    <p>Supplemental actions within the card are explicitly called out using icons, text, and UI controls, typically
+                        placed at the bottom of the card.</p>
+                    <br />
+                    <p>Limit supplemental actions to two actions, in addition to an overflow menu.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards16.png" width="760" /><br />
+                <p>Card with action area, rich media and supporting text</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards17.png" width="760" /><br />
+                <p>Card with action areas 1 and 2, optional header, rich media, supporting text, and supplemental actions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards18.png" width="760" /><br />
+                <p>Card with action areas 1, 2, 3 and 4, optional header, rich media, and supplemental actions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards19.png" width="760" /><br />
+                <p>Card with action areas 1 and 2, optional header, supporting text and supplemental actions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>UI Controls</h3>
+                <p>UI controls, like a slider, placed inline with primary content can modify the view of the primary content.
+                    For example, a slider to choose a day, stars to rate content, or a segmented button to select a date
+                    range.
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action1.png" width="760" /><br />
+                <p>This card contains UI controls within the action area block</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action4.png" width="760" /><br />
+                <p>This card contains segmented buttons within the action area block.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action6.png" width="760" /><br />
+                <p>This card contains a slider control within the action area block.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action5.png" width="760" /><br />
+                <p>This card contains tabs within the action area block.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Overflow menu (optional)</h3>
+                <P>An overflow menu is typically placed in the upper-right corner of a card, but can be placed in the lower-right
+                    corner if doing so improves content layout and legibility.</p>
+                <br />
+                <p>Take care not to overload an overflow menu with too many actions.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action5.png" width="760" /><br />
+                <p>This card contains an overflow menu in the top right.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Additional Actions</h3>
+                <P>Inline links within text content are strongly discouraged.</p>
+                <br />
+                <p>Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember
+                    that cards are entry points to more complex and detailed information.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_action2-do.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Don't</p>
+                <p>Use cards as an entry point to more detailed information.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_action3-dont.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Cards provide context and an entry point to more robust information and views. Don't overload cards with
+                    extraneous information or actions. Inline links within text content are strongly discouraged.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Content Blocks</h2>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Additional Actions</h3>
+                <P>Cards can be constructed using blocks of content which include:</p>
+                <br />
+                <ul>
+                    <li>An optional header
+                        <li>A primary title
+                            <li>Rich media
+                                <li>Supporting text
+                                    <li>Actions</li>
+                </ul>
+                <p>These blocks can be organized to promote different types of content. For example, numbers may be emphasized
+                    by increasing their typographic scale.</p>
+                <br />
+                <p>On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards20.png" width="760" /><br />
+                <p>Primary title top padding: 24dp<br /> Primary title bottom padding: 16dp<br /> Action button row padding:
+                    8dp
+                    <br /> Supporting text top padding: 16dp<br /> Supporting text bottom padding: 24dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Content block types</h3>
+                <h4>Rich media</h4>
+                <br />
+                <p>16:9 or 1:1 aspect ratio (recommended)</p>
+                <br />
+                <h4>Actions</h4>
+                <br />
+                <p>Padding: 8dp</p>
+                <br />
+                <h4>Primary title/text</h4>
+                <br />
+                <p>Title: 24sp or 14sp</p>
+                <p>Subtitle: 14sp</p>
+                <p>Left and right padding: 16dp on mobile</p>
+                <br />
+                <p>On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information.</p>
+                <br />
+                <p>Top padding: 16dp or 24dp (when a large primary title is present)</p>
+                <p>Bottom padding: 16dp (if there are additional actions or supporting text) or 24dp (no actions or supporting
+                    text)
+                </p>
+                <br />
+                <h4>Supporting text</h4>
+                <br />
+                <p>Supporting text: 14sp</p>
+                <p>Left and right padding: 16dp on mobile</p>
+                <br />
+                <p>On tablet/desktop, cards should follow the 24dp keyline. See Metrics & Keylines for more information. Top
+                    padding: 16dp</p>
+                <p>Bottom padding: 24dp (16dp if there are additional actions or text below)</p>
+                <br />
+                <p>Bullet points (but not their text), images, and buttons may extend outside of the 16dp padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards28.png" width="760" /><br />
+                <p>Primary title top padding: 24dp<br /> Primary title bottom padding: 16dp<br /> Action button row padding:
+                    8dp
+                    <br /> Supporting text top padding: 16dp<br /> Supporting text bottom padding: 24dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Card Collections</h3>
+                <br />
+                <p><strong>Card margins on mobile</strong></p>
+                <br />
+                <p>Padding from edge of screen to card: 8dp</p>
+                <p>Space between cards: 8dp</p>
+                <br />
+                <h3>Responsive UI</h3>
+                <br />
+                <p>Card gutters and margins may vary on larger screen sizes, as long as they follow Material Design 8dp grid.
+                    Card margins and gutters can be 8, 16, 24, or 40dp wide.</p>
+                <br />
+                <p>Margins and gutters don’t need to be equal. For example, both 40dp margins and 24dp gutters can be used in
+                    the same layout.</p>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <video width="760" height="512" controls>
+                    <source src="assets/images/card/layout_adaptiveUI_grid_02_margins.mp4" type="video/mp4">
+                </video>
+                <br />
+                <p>This animation shows interactions of the following margin and gutter width variations:</p>
+                <ul>
+                    <li>8dp margins and gutters</li>
+                    <li>16dp margins and gutters</li>
+                    <li>24dp margins and gutters</li>
+                    <li>40dp margins and gutters</li>
+                    <li>40dp margins and 24dp gutters</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Elevation</h3>
+                <br />
+                <p>Card resting elevation: 2dp</p>
+                <p>Card raised elevation: 8dp</p>
+                <br />
+
+                <p>Cards have a default elevation of 2dp.</p>
+
+                <p>On desktop, cards can have a resting elevation of 0dp and gain an elevation of 8dp on hover.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_elevation.png" width="760" /><br />
+                <p>Card resting elevation of 2dp, and raised elevation of 8dp</p>
+                <br />
+                <img src="assets/images/card/components_cards_elevation_desktop.png" width="760" /><br />
+                <p>On desktop, cards have a resting elevation of 0dp (left), and an elevation of 8dp on hover (right)</p>
+                <p>(desktop only)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Content block combinations</h3>
+                <br />
+                <p>The following examples illustrate some possible combinations of content blocks.</p>
+                <br />
+                <h4>Media area</h4>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <h4>Supporting Text</h4>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Left and right padding: 16dp</li>
+                    <li>Top padding: 16dp or 24dp (when a primary title is present)</li>
+                    <li>Bottom padding: 16dp (if there are additional actions or supporting text) or 24dp (if there are no actions
+                        or supporting text)</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards29.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar, Title, and Subtitle area</h3>
+                <br />
+                <ul>
+                    <li>Height: 72dp</li>
+                    <li>Left and right padding: 16dp</li>
+                    <li>Top and bottom padding: 16dp</li>
+                </ul>
+                <h3>Media Area</h3>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <h3>Supporting Text</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Left and right padding: 16dp</li>
+                    <li>Top and bottom padding: 16dp</li>
+                </ul>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards30.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar, Title, and Subtitle area</h3>
+                <ul>
+                    <li>Height: 72dp</li>
+                    <li>Left and right padding: 16dp</li>
+                    <li>Top and bottom padding: 16dp</li>
+                </ul>
+                <h3>Media Area</h3>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                    <li>Padding between actions: 4dp</li>
+                </ul>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards31.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards32.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+                <h3>Expanded supporting text</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Top padding: 16dp</li>
+                    <li>Bottom padding: 24dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards33.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Subtitle</h3>
+                <ul>
+                    <li>Top padding: 12dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Supporting text</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Top padding: 16dp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards34.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>16:9 ratio</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards35.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>1:1 ratio</li>
+                </ul>
+                <br />
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Bottom padding: 16dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards36.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>1:1 ratio</li>
+                </ul>
+                <br />
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards37.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>80dp</li>
+                    <li>1x</li>
+                    <li>Top padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp
+                        <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards24.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>1.5x (Increment size based on 80dp media area)</li>
+                    <li>Top padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards25.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>2x (Increment size based on 80dp media area)</li>
+                    <li>Top padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Primary text</h3>
+                <ul>
+                    <li>Text: 24sp</li>
+                    <li>Top padding: 24dp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Subtext</h3>
+                <ul>
+                    <li>Text: 14sp</li>
+                    <li>Right and left padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>Padding: 8dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards26.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Media area</h3>
+                <ul>
+                    <li>3x (Increment size based on 80dp media area)</li>
+                    <li>Padding: 16dp</li>
+                </ul>
+                <br />
+                <h3>Actions</h3>
+                <ul>
+                    <li>All around padding: 8dp + 16dp</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards41.png" width="760" /><br />
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                 <h3>Dividers in cards</h3>
+                 <br />
+                 <p>Dividers may be used to separate content areas in cards that require distinct visual separation. Dividers may also indicate
+        seams in places where material may expand.</p>
+        <br />
+                <p>Content areas that can be expanded should use full-width dividers. Dividers can indicate seams in material
+                    where the material will expand when content is expanded.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards33 (1).png" width="760" /><br />
+                <p>This example uses a full-bleed divider. Similar to expansion of lists, this card uses a full-width divider to denote expansion.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                 <p>Content areas that need more distinct visual separation should use dividers.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/card/components_cards_action6 (1).png" width="360" /><br />
+                <p>This example uses a full-bleed divider as a way to visually separate the slider content and list from the action below.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                 <p>Use inset dividers to separate related content.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/card/components_cards_action4 (1).png" width="760" /><br />
+                <p>This example uses an inset divider to separate related the restaurant information from the booking section.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

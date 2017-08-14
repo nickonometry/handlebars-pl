@@ -13,6 +13,19 @@
       min-height: 100%;
     }
 
+    #demo-absolute-fab {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+      }
+
+      @media(min-width: 1024px) {
+        #demo-absolute-fab {
+          bottom: 3rem;
+          right: 5rem;
+        }
+      }
+
     /* Place drawer and main next to each other. */
     .demo-content {
       display: flex;
@@ -54,7 +67,12 @@
     margin-bottom: 40px;
 }
   
-
+.mdc-layout-grid--align-left {
+    margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+  
   .guidelines {
     max-width: 1230px;
     box-sizing: border-box;
@@ -68,7 +86,7 @@
     word-wrap: break-word;
   }
 
-  .guidelines h1 {
+  .guidelines-h1 {
     font-size: 34px;
     font-weight: 400;
     line-height: 40px;
@@ -101,6 +119,7 @@ font-size: 13px;
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 30px;
+    margin-left: 22px;
     overflow: hidden;
 }
 
@@ -325,6 +344,7 @@ body {
 
       .panels {
         margin-top: 16px;
+        width: 1200px;
       }
 
       .panel {
@@ -334,4 +354,18 @@ body {
       .panel.active {
         display: block;
       }
+
+ #grid-cont {
+    width: 100%;
+    padding-left: 239px;
+}
+
+#grid-cont section.grid_outer {
+    margin: auto;
+    width: 1160px;
+}
+
+#grid-cont .chapter {
+    padding-top: 80px;
+}
 

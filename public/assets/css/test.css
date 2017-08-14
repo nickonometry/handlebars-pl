@@ -1,0 +1,20 @@
+
+#box {
+        background: red;
+        height: 100px;
+        transition: height 300ms;
+        width: 100px;
+        margin: 0px auto;
+        transition: all .2s ease-in;
+        transition: all .3s ease-out;
+    }
+
+    
+    #box.is-active {
+        
+        width: 960px;
+        height: 100vh;
+        transform: scale(1.1);
+        position: fixed;
+        top: 0px;
+    }

@@ -1,177 +1,188 @@
 <div class="guidelines">
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <p>Chips represent complex entities in small blocks, such as a contact. A chip may contain entities such as a photo,
-          text, rules, an icon, or a contact. Contact chips may represent contact information in a compact way.</p>
-      </div>
-      <div fxFlex="360px">
-        <h4>Behavior</h4>
-        <ul>
-          <li>Selecting a chip opens a full detail view.</li>
-          <li>Chips may be deleted if they display a delete icon.</li>
-        </ul>
-        <h4>Specs</h4>
-        <ul>
-          <li>Height: 32dp</li>
-          <li>Label: 13sp Roboto Regular, 87% black</li>
-        </ul>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_chips.png" width="360" />
-      </div>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <p>Chips represent complex entities in small blocks, such as a contact. A chip may contain entities such as a photo, text,
+        rules, an icon, or a contact. Contact chips may represent contact information in a compact way.</p>
     </div>
-
-    <div id="spacer"></div>
-
-    <h2>Usage</h2>
-    <p>A chip may contain a photo, short title, and brief information.</p>
-    <br />
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <h4>Types of chips</h4>
-        <p>Chips can be used for various types of entities, including free form text, predefined text, rules, or contacts. Chips
-          may also contain icons.</p>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_acux_chips_chiptxt.png" width="360" /><br />
-        <p>Chips with text</p>
-        <h4>Chip label</h4>
-        <ul>
-          <li>13sp Roboto Regular</li>
-          <li>87% black</li>
-        </ul>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_acux_chips_chipstxticon.png" width="360" /><br />
-        <p>Chips with text and an icon</p>
-      </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <h4>Behavior</h4>
+      <ul>
+        <li>Selecting a chip opens a full detail view.</li>
+        <li>Chips may be deleted if they display a delete icon.</li>
+      </ul>
+      <h4>Specs</h4>
+      <ul>
+        <li>Height: 32dp</li>
+        <li>Label: 13sp Roboto Regular, 87% black</li>
+      </ul>
     </div>
-
-    <div id="spacer"></div>
-
-    <h2>Behavior</h2>
-    <h3>Opening chips</h3>
-    <p>Touching a chip opens a full detailed view (either in a card or full screen) or a menu of options related to that chip.</p>
-    <br />
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <h3>Deleting Chips</h3>
-        <p>Chips can be deletable or non-deletable. Display a delete icon if a chip is deletable.</p>
-      </div>
-      <div fxFlex="720px">
-        <video width="720" height="152" controls>
-          <source src="assets/images/chips/components_acux_chips_deleting.mp4" type="video/mp4">
-        </video>
-      </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_chips.png" width="360" />
     </div>
-
-    <div id="spacer"></div>
-
-    <h2>Contact chips</h2>
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <p>Contact information that users have for people may be represented in a compact way using contact chips. The chips
-          are invoked and inserted into a text field (usually the “To” field) when the user starts typing a contact’s name,
-          sees the contact’s addresses, and selects the correct one. Contact chips can be added directly to a text field
-          from a menu of contacts.</p>
-        <p>Contact chips efficiently confirm that the user will be sending their message to the correct person.</p>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_chips_contact1.png" width="360" /><br/>
-        <p>The user confirms the name(s) of the email recipient(s) on the contact chips.</p>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_chips_contact2.png" width="360" /><br />
-        <p>The user confirms which email address to select on the contact chip.</p>
-      </div>
-    </div>
-
-    <div id="spacer-no-line"></div>
-
-    <div class="guidelinesColumns">
-      <div fxFlex="360px"></div>
-      <div fxFlex="720px">
-        <img src="assets/images/chips/components_chips_contact3.png" width="720" /><br />
-        <p>The contact chip has different states: Normal, Focused, Pressed, and Activated.</p>
-      </div>
-    </div>
-
-    <div id="spacer"></div>
-
-    <h2>Specs</h2>
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <h3>Single-line chips</h3>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_acux_chips_deletable_rl.png" width="360" /><br/>
-        <h4>Deletable chip</h4>
-        <p>Height: 32dp</p>
-        <p>Label left padding: 12dp</p>
-        <br />
-        <h4>Remove icon</h4>
-        <p>Size: 24dp x 24dp</p>
-        <p>Color & opacity: 54% black</p>
-        <p>Margin: 4dp</p>
-        <br />
-        <p>On desktop, the “Remove” icon is persistent.</p>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_acux_chips_nondeletecontact_rl.png" width="360" /><br />
-        <h4>Non-deletable chip</h4>
-        <p>Height: 32dp</p>
-        <p>Label left and right padding: 12dp</p>
-        <br />
-        <h4>Contact chip</h4>
-        <p>Height: 32dp</p>
-        <p>Label left padding: 8dp</p>
-        <p>Label right padding: 12dp</p>
-      </div>
-    </div>
-
-    <div id="spacer-no-line"></div>
-
-    <div class="guidelinesColumns">
-      <div fxFlex="360px">
-        <h3>Contact Chips</h3>
-        <br />
-        <h4>Closed contact chip</h4>
-        <ul>
-          <li>The contact name text is Roboto Regular 14sp.</li>
-          <li>Upon focus, the chip rises to an elevation of 2dp. When pressed, it expands to show alternative addresses for the
-            contact.
-          </li>
-        </ul>
-        <br />
-        <h4>Open contact chip</h4>
-        <ul>
-          <li>Contact name text: Roboto Regular 16sp</li>
-          <li>Address text: Roboto Regular 14sp</li>
-          <li>Elevation of the open contact chip is 8dp.</li>
-          <li>On press, the contact chip closes automatically.</li>
-          <li>By default, the top field is activated and focused.</li>
-        </ul>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_chips_contact_keyline1.png" width="360" />
-        <br/>
-        <br />
-        <h4>Contact chip</h4>
-        <br />
-        <p>Height: 32dp</p>
-        <p>Title top, bottom, and left padding: 8dp</p>
-        <p>Title right padding: 12dp</p>
-      </div>
-      <div fxFlex="360px">
-        <img src="assets/images/chips/components_chips_contact_keyline2.png" width="360" /><br />
-        <h4>Focused and activated contact chip</h4>
-        <br />
-        <p>Height: 40dp</p>
-        <p>Top and bottom padding: 16dp</p>
-        <br />
-        <h4>Unfocused contact chips</h4>
-        <p>Top and bottom padding: 20dp</p>
-      </div>
-    </div>
-
   </div>
+</div>
+
+<div id="spacer"></div>
+
+<h2>Usage</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <p>A chip may contain a photo, short title, and brief information.</p>
+  <br />
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <h4>Types of chips</h4>
+      <p>Chips can be used for various types of entities, including free form text, predefined text, rules, or contacts. Chips
+        may also contain icons.</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_acux_chips_chiptxt.png" width="360" /><br />
+      <p>Chips with text</p>
+      <h4>Chip label</h4>
+      <ul>
+        <li>13sp Roboto Regular</li>
+        <li>87% black</li>
+      </ul>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_acux_chips_chipstxticon.png" width="360" /><br />
+      <p>Chips with text and an icon</p>
+    </div>
+  </div>
+</div>
+<div id="spacer"></div>
+
+<h2>Behavior</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <h3>Opening chips</h3>
+<p>Touching a chip opens a full detailed view (either in a card or full screen) or a menu of options related to that chip.</p>
+<br />
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <h3>Deleting Chips</h3>
+      <p>Chips can be deletable or non-deletable. Display a delete icon if a chip is deletable.</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+      <video width="760" height="152" controls>
+        <source src="assets/images/chips/components_acux_chips_deleting.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<div id="spacer"></div>
+
+<h2>Contact chips</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <p>Contact information that users have for people may be represented in a compact way using contact chips. The chips are
+        invoked and inserted into a text field (usually the “To” field) when the user starts typing a contact’s name, sees
+        the contact’s addresses, and selects the correct one. Contact chips can be added directly to a text field from a
+        menu of contacts.</p>
+      <p>Contact chips efficiently confirm that the user will be sending their message to the correct person.</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_chips_contact1.png" width="360" /><br/>
+      <p>The user confirms the name(s) of the email recipient(s) on the contact chips.</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_chips_contact2.png" width="360" /><br />
+      <p>The user confirms which email address to select on the contact chip.</p>
+    </div>
+  </div>
+</div>
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4"></div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+      <img src="assets/images/chips/components_chips_contact3.png" width="760" /><br />
+      <p>The contact chip has different states: Normal, Focused, Pressed, and Activated.</p>
+    </div>
+  </div>
+</div>
+
+<div id="spacer"></div>
+
+<h2>Specs</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <h3>Single-line chips</h3>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_acux_chips_deletable_rl.png" width="360" /><br/>
+      <h4>Deletable chip</h4>
+      <p>Height: 32dp</p>
+      <p>Label left padding: 12dp</p>
+      <br />
+      <h4>Remove icon</h4>
+      <p>Size: 24dp x 24dp</p>
+      <p>Color & opacity: 54% black</p>
+      <p>Margin: 4dp</p>
+      <br />
+      <p>On desktop, the “Remove” icon is persistent.</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_acux_chips_nondeletecontact_rl.png" width="360" /><br />
+      <h4>Non-deletable chip</h4>
+      <p>Height: 32dp</p>
+      <p>Label left and right padding: 12dp</p>
+      <br />
+      <h4>Contact chip</h4>
+      <p>Height: 32dp</p>
+      <p>Label left padding: 8dp</p>
+      <p>Label right padding: 12dp</p>
+    </div>
+  </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+  <div class="mdc-layout-grid__inner">
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <h3>Contact Chips</h3>
+      <br />
+      <h4>Closed contact chip</h4>
+      <ul>
+        <li>The contact name text is Roboto Regular 14sp.</li>
+        <li>Upon focus, the chip rises to an elevation of 2dp. When pressed, it expands to show alternative addresses for the
+          contact.
+        </li>
+      </ul>
+      <br />
+      <h4>Open contact chip</h4>
+      <ul>
+        <li>Contact name text: Roboto Regular 16sp</li>
+        <li>Address text: Roboto Regular 14sp</li>
+        <li>Elevation of the open contact chip is 8dp.</li>
+        <li>On press, the contact chip closes automatically.</li>
+        <li>By default, the top field is activated and focused.</li>
+      </ul>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_chips_contact_keyline1.png" width="360" />
+      <br/>
+      <br />
+      <h4>Contact chip</h4>
+      <br />
+      <p>Height: 32dp</p>
+      <p>Title top, bottom, and left padding: 8dp</p>
+      <p>Title right padding: 12dp</p>
+    </div>
+    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+      <img src="assets/images/chips/components_chips_contact_keyline2.png" width="360" /><br />
+      <h4>Focused and activated contact chip</h4>
+      <br />
+      <p>Height: 40dp</p>
+      <p>Top and bottom padding: 16dp</p>
+      <br />
+      <h4>Unfocused contact chips</h4>
+      <p>Top and bottom padding: 20dp</p>
+    </div>
+  </div>
+</div>
+</div>

@@ -57,6 +57,12 @@ app.get('/buttontoggles', function (req, res) {
     });
 });
 
+app.get('/card', function (req, res) {
+    res.render('card', {
+        pageTitle: 'Card',
+    });
+});
+
 app.get('/checkbox', function (req, res) {
     res.render('checkbox', {
         pageTitle: 'Checkbox',
@@ -87,6 +93,12 @@ app.get('/dialog', function (req, res) {
     });
 });
 
+app.get('/dropdownselect', function (req, res) {
+    res.render('dropdownselect', {
+        pageTitle: 'Dropdown Select',
+    });
+});
+
 app.get('/expansionpanel', function (req, res) {
     res.render('expansionpanel', {
         pageTitle: 'Expansion Panel',
@@ -105,9 +117,45 @@ app.get('/linearprogress', function (req, res) {
     });
 });
 
+app.get('/list', function (req, res) {
+    res.render('list', {
+        pageTitle: 'List',
+    });
+});
+
+app.get('/radio', function (req, res) {
+    res.render('radio', {
+        pageTitle: 'Radio',
+    });
+});
+
+app.get('/simplemenu', function (req, res) {
+    res.render('simplemenu', {
+        pageTitle: 'Simple Menu',
+    });
+});
+
+app.get('/slider', function (req, res) {
+    res.render('slider', {
+        pageTitle: 'Slider',
+    });
+});
+
 app.get('/snackbar', function (req, res) {
     res.render('snackbar', {
         pageTitle: 'Snackbar',
+    });
+});
+
+app.get('/switch', function (req, res) {
+    res.render('switch', {
+        pageTitle: 'Switch',
+    });
+});
+
+app.get('/typography', function (req, res) {
+    res.render('typography', {
+        pageTitle: 'Typography',
     });
 });
 

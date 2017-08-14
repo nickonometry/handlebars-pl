@@ -1,1 +1,229 @@
-<p>TEST!!!!!!!!!!!</p>
+<div class="guidelines">
+    <h3><strong>Mobile or tablet</strong></h3>
+    <p>Use simple menus in lists to display the options for a specific list item.</p>
+    <br />
+    <h3><strong>Vertical alignment</strong></h3>
+    <p>When close to a screen edge, simple menus vertically realign to make all menu items are completely visible.</p>
+    <br />
+    <p><strong>Disambiguation</strong>: In contrast to simple menus, simple dialogs can present additional detail related to
+        the options available for a list item or provide navigational or orthogonal actions related to the primary task.
+        Although they can display the same content, simple menus are preferred over simple dialogs because simple menus are
+        less disruptive to the user’s current context.</p>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3><strong>Item selection</strong></h3>
+                <p>Choosing an option immediately commits the option and closes the menu.</p>
+                <br />
+                <h3><strong>Cancelling selection</strong></h3>
+                <p>Touching outside of the menu, or pressing the system Back button, cancels the action and closes the menu.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus1.png" width="760" /><br />
+                <p>Example of a simple menu</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>When opened, simple menus attempt to vertically align the currently selected menu item with the list item.
+                    The currently selected menu item is highlighted.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus2.png" width="760" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>The currently selected menu item aligns vertically over the list item.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus3.png" width="760" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>The currently selected menu item aligns vertically over the list item.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Do not arbitrarily position the first menu item over the list item.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus5.png" width="760" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>The first menu item is arbitrarily positioned over the list item, regardless of the currently selected menu
+                    item.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>When close to a screen edge, simple menus reposition their vertical alignment so that all menu items are
+                    completely visible.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus4.png" width="760" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>The currently selected menu item normally would be positioned over the list item, but because doing so in
+                    this case would cause part of the menu to appear off-screen, the entire menu is repositioned vertically.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Simple menus appear over their emitting element, not below.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus6.png" width="760" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Simple menus appear over their emitting element.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus7.png" width="760" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Do</p>
+                <p>Simple menus do not appear below their emitting element.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Menu width varies depending on string length, and on mobile is defined as a multiple of a 56dp unit.</p>
+                <br />
+                <p>Simple menus always maintain a 16dp margin (phone) or 24dp margin (tablet) to the left and right edges of
+                    the screen.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus8.png" width="360" /><br />
+                <p>Simple menu with a 16dp margin.<br /> Each unit is 56dp wide.<br /> Minimum width on mobile = 2 * 56dp =
+                    112dp
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus9.png" width="360" /><br />
+                <p>Simple menu with 16dp margins on the left and right.<br /> Each unit is 56dp wide.<br /> Maximum width on
+                    mobile (in both portrait and landscape) = 5 * 56dp = 280dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>If text in a simple menu wraps to a second line, use a simple dialog instead. Simple dialogs can have rows
+                    with varying heights.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus10.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Use a simple dialog if any text in a simple menu wraps to a second line.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus11.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Don’t truncate text in a simple menu. Use a simple dialog instead.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Menus show a persistent scroll bar when content is scrollable.</p> 
+                <br />
+                <p>The maximum height of a simple menu should
+                    be one or more rows less than the view height. This ensures a tappable area outside of the simple menu
+                    with which to dismiss the menu.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus12.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Display a scroll bar by default for scrollable content.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus13.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Without a scroll bar, it’s unclear if there are additional menu items available.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Don’t duplicate the selected menu item.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus14.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Each menu item appears only once.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus15.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Don’t display a duplicate of the selected element.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Simple menus are always left-aligned with the start of the list item text and do not reposition horizontally based on the touch location.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus16.png" width="760" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Simple menus are left-aligned regardless of touch location.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/simplemenu/components_dialogs_simplemenus17.png" width="760" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Simple menus do not reposition based on the touch location.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

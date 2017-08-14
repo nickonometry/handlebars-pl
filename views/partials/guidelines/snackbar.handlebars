@@ -1,7 +1,7 @@
-<div class="guidelines">
+       <div class="guidelines">
         <h3>Snackbars & Toasts</h3>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <p>Snackbars provide brief feedback about an operation through a message at the bottom of the screen.</p>
                 <p>Snackbars contain a single line of text directly related to the operation performed. They may contain a text
                     action, but no icons.</p>
@@ -9,7 +9,7 @@
                     but may not be swiped off-screen.</p>
 
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h4>Usage</h4>
 
                 <p>Only one snackbar may be displayed at a time. Each snackbar may contain a single action, neither of which
@@ -25,14 +25,15 @@
                     <li>Desktop snackbar height: 48dp</li>
                 </ul>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_snackbars.png" width="360" />
             </div>
         </div>
+        </div>
 
         <h2>Usage</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="720px">
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
                 <p>Show only one snackbar on screen at a time.</p>
                 <h3>Placement</h3>
                 <p>Snackbars appear above most elements on screen, and they are equal in elevation to the floating action button.
@@ -48,28 +49,33 @@
 
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
 
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>Very short text strings</h3>
                 <p>Snackbars should contain a single line of text directly related to the operation performed. They may contain
                     a text action. They cannot contain icons.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage1.png" width="360" />
                 <div class="do"></div>
                 <p class="do-text-color">Do.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage2.png" width="360" />
                 <div class="dont"></div>
                 <p class="dont-text-color">Don't</p>
             </div>
         </div>
+        </div>
+        
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>Transient</h3>
                 <p>Snackbars automatically time out from the screen. For usability reasons, snackbars should not contain the
                     only way to access a core use case. They should not be persistent or be stacked, as they are above other
@@ -79,39 +85,45 @@
                     reset upon the window focus being regained. This is to ensure that the user will be able to read the
                     snackbar for the full intended duration.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage3.png" width="360" />
                 <div class="do"></div>
                 <p class="do-text-color">Do.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage4.png" width="360" />
                 <div class="dont"></div>
                 <p class="dont-text-color">Don't</p>
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+        
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>0-1 actions, not dismiss or cancel</h3>
                 <p>If an action is present, comply with dialog spacing and affordance rules. For two or more actions, use a
                     dialog, not a snackbar, even when one of the actions is a dismiss action. If the action described in
                     the snackbar is important enough to block the use of the screen, it should be a dialog. </p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage5.png" width="360" />
                 <div class="do"></div>
                 <p class="do-text-color">Do.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_usage6.png" width="360" />
                 <div class="dont"></div>
                 <p class="dont-text-color">Don't</p>
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>Don’t block the floating action button</h3>
                 <p>Move your floating action button vertically to accommodate the snackbar height. </p>
 
@@ -119,22 +131,24 @@
                 <p>There is only ever one snackbar displayed. When a second snackbar is triggered while the first is displayed,
                     the first should start the contraction motion downwards before the second one animates upwards. </p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/blockdo.png" width="360" />
                 <div class="do"></div>
                 <p class="do-text-color">Do.</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/blockdont.png" width="360" />
                 <div class="dont"></div>
                 <p class="dont-text-color">Don't</p>
             </div>
         </div>
+        </div>
 
         <div id="spacer"></div>
+
         <h2>Specs</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>Mobile</h3>
                 <ul>
                     <li>Single-line snackbar height: 48dp</li>
@@ -144,36 +158,45 @@
                     <li>Default background fill: #323232 100%</li>
                 </ul>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_mobile1.png" width="360" />
                 <p>A mobile snackbar</p>
             </div>
-            <div fxFlex="360px">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <img src="assets/images/snackbar/components_toasts_mobile2.png" width="360" />
                 <p>A mobile snackbar</p>
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
             </div>
-            <div fxFlex="720px">
-                <img src="assets/images/snackbar/components_toasts_mobile3.png" width="720" />
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/snackbar/components_toasts_mobile3.png" width="760" />
                 <p>Mobile in landscape with a snackbar</p>
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
             </div>
-            <div fxFlex="720px">
-                <img src="assets/images/snackbar/components_toasts_mobile4.png" width="720" />
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/snackbar/components_toasts_mobile4.png" width="760" />
                 <p>Specs of a mobile snackbar</p>
             </div>
         </div>
+        </div>
+
         <div id="spacer-no-line"></div>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
+
+        <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">     <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
                 <h3>Tablet / Desktop</h3>
                 <ul>
                     <li>Single-line snackbar height: 48dp tall</li>
@@ -186,21 +209,21 @@
                     <li>Alignment: Centered or left-aligned 24dp from the left and bottom edges of the screen</li>
                 </ul>
             </div>
-            <div fxFlex="720px">
-                <img src="assets/images/snackbar/components_toasts_tabletdesktop1.png" width="720" />
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/snackbar/components_toasts_tabletdesktop1.png" width="760" />
                 <p>A center aligned tablet/desktop snackbar</p>
                 <div id="spacer-no-line"></div>
-                <img src="assets/images/snackbar/components_toasts_tabletdesktop2.png" width="720" />
+                <img src="assets/images/snackbar/components_toasts_tabletdesktop2.png" width="760" />
                 <p>A center-aligned tablet/desktop snackbar</p>
                 <div id="spacer-no-line"></div>
-                <img src="assets/images/snackbar/components_toasts_tabletdesktop1-left.png" width="720" />
+                <img src="assets/images/snackbar/components_toasts_tabletdesktop1-left.png" width="760" />
                 <p>A left-aligned tablet/desktop snackbar</p>
                 <div id="spacer-no-line"></div>
-                <img src="assets/images/snackbar/components_toasts_tabletdesktop3.png" width="720" />
+                <img src="assets/images/snackbar/components_toasts_tabletdesktop3.png" width="760" />
                 <p>Specs of tablet/desktop snackbar</p><br />
                 <p>Snackbar height: 48dp<br /> Snackbar left and right padding: 24dp<br /> Snackbar top and bottom padding:
                     14dp<br /> Snackbar button left padding: 48dp</p>
             </div>
         </div>
-
-    </div>
+        </div>
+</div>

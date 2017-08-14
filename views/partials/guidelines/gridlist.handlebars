@@ -1,415 +1,439 @@
- <div class="guidelines">
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <p>Grid lists are an alternative to standard list views.</p>
+<div class="guidelines">
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <p>Grid lists are an alternative to standard list views.</p>
 
-                <p>A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout.</p>
+            <p>A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout.</p>
 
-                <p>Grid lists are best used on similar data types. They help improve the visual comprehension of the content
-                    they contain.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <h4>Types</h4>
-                <p>Image-only</p>
-                <p>Single-line text (or with icon)</p>
-                <p>Two-line text (or with icon)</p>
-                <br />
-                <br />
-                <h4>Actions</h4>
-                <p>Vertical Scrolling</p>
-                <p>Filtering</p>
-                <br />
-                <br />
-                <h4>Alternatives</h4>
-                <p>Lists</p>
-                <p>Cards</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grid_lists.png" width="360" />
-            </div>
+            <p>Grid lists are best used on similar data types. They help improve the visual comprehension of the content they
+                contain.</p>
         </div>
 
-        <div id="spacer-no-line"></div>
-
-        <h2>Usage</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <p>A grid list is best suited to presenting homogenous data, typically images, and is optimized for visual comprehension
-                    and differentiating between similar data types.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_usage1.png" width="360" /><br />
-                <p>Example of grid list</p>
-            </div>
-
-            <div fxFlex="360px">
-            </div>
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h4>Types</h4>
+            <p>Image-only</p>
+            <p>Single-line text (or with icon)</p>
+            <p>Two-line text (or with icon)</p>
+            <br />
+            <br />
+            <h4>Actions</h4>
+            <p>Vertical Scrolling</p>
+            <p>Filtering</p>
+            <br />
+            <br />
+            <h4>Alternatives</h4>
+            <p>Lists</p>
+            <p>Cards</p>
         </div>
 
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <p>A grid list consists of a repeated pattern of cells arrayed vertically and horizontally within the grid list.</p>
-
-                <p>Tiles hold content and can span one or more cells vertically or horizontally.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_usage2.png" width="360" /><br />
-                <p>Example of grid list</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_usage3.png" width="360" /><br />
-                <p>Example of a cell and tile</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="660px">
-                <p>If the text in tiles needs to be prominent enough to distinguish between primary content pieces, consider
-                    using a different container, like a list or cards, optimized for displaying text and facilitating reading
-                    comprehension.
-                    <br />
-                    <br />
-
-                    <h4>Lists:</h4>
-                    <p>Optimized for reading comprehension, particularly when comparing a set of data containing multiple data
-                        types. </p>
-                    <br />
-                    <br />
-
-                    <h4>Cards:</h4>
-                    <p>Used for content with inconsistent formatting, such as photos with captions of variable length, or data
-                        sets with heterogeneous content, such as a mixed collection of photos and videos and books.</p>
-            </div>
-        </div>
-
-        <div id="spacer"></div>
-
-        <h2>Content</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Content in tiles</h3>
-                <p>Tile content consists of primary content and secondary content. Primary content is the main differentiating
-                    element, typically an image. Secondary content can be an action or text.</p>
-                <br />
-                <p>Provide a default image for tiles that lack an image for primary content.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_content1.png" width="360" /><br />
-                <p>Example of tile content with primary and secondary actions</p>
-            </div>
-
-            <div fxFlex="360px">
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Actions in tiles</h3>
-                <p>Actions on both primary and secondary content – such as play, zoom in, delete, or select – are immediate
-                    and typically do not result in a submenu of options (action overflow) within the grid list.</p>
-                <br />
-                <p>Actions can open a subsequent view, such as a card.</p>
-                <br />
-                <br />
-                <h3>Primary actions</h3>
-                <ul>
-                    <li>Fill the entire tile and therefore are not represented via icons or text.</li>
-                    <li>Are consistent throughout tiles in a specific grid list. For example, the primary action for all tiles
-                        in a single grid list could be to view details for an image.</li>
-                </ul>
-                <br />
-                <br />
-                <h3>Secondary actions or content</h3>
-                <ul>
-                    <li>Are represented in tiles with icons or text.</li>
-                    <li>Are consistent throughout tiles in a specific grid list.</li>
-                    <li>Are placed in a consistent location within the tiles of a specific grid list, but that consistent location
-                        may vary between grid lists (at corners or edges). For example, all titles in one grid list could
-                        be located at the bottom left corner, while all tiles in another grid list might place titles in
-                        the top left corner.</li>
-                </ul>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_content2.png" width="360" /><br />
-                <p>Example of secondary action with action and text positions</p>
-            </div>
-
-            <div fxFlex="360px">
-            </div>
-        </div>
-
-        <div id="spacer"></div>
-
-        <h2>Behavior</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Scrolling</h3>
-                <p>Grid lists typically scroll only vertically.</p>
-                <br />
-                <p>Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns,
-                    affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of
-                    images, such as a gallery, which is compatible with typical reading patterns.</p>
-                <br />
-                <p>Cut off grid tiles in the view’s initial scroll position to communicate the scroll direction for content
-                    overflow.
-                </p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_behavior1.png" width="360" /><br />
-                <div class="do"></div>
-                <p class="do-text-color">Do.</p><br />
-                <p>Indicate content overflow by cutting off grid tiles.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_behavior2.png" width="360" /><br />
-                <div class="dont"></div>
-                <p class="dont-text-color">Dont.</p><br />
-                <p>Avoid aligning grid tiles along a view edge in the view’s initial scroll position. This positioning doesn’t
-                    effectively communicate that there is more content available.</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-        <h3>Gestures</h3>
-        <p>Per-tile swipe actions are not permitted. Pick-up-and-move actions are discouraged.</p>
-        <br/>
-        <br />
-        <h3>Tile filtering and sorting</h3>
-        <p>Content in a grid list can be programmatically filtered or sorted by date, file size, alphabetical order, or other
-            parameters.
-        </p>
-        <p>The first item in the grid list is positioned at the top left of the grid list, and the order proceeds left to right
-            and top to bottom.</p>
-        <br />
-        <br />
-        <h3>Dimensions and resizing</h3>
-        <p>Resizing a grid list causes the tiles to re-sort as horizontal space becomes available. Full-bleed grid list tiles
-            resize to fit the screen width.</p>
-        <p>A grid list does not transform into a list when horizontal space contracts. Grid lists and lists are separate structures
-            for emphasizing different data types. Grid lists prioritize images over text and lists prioritize text over images.</p>
-        <p>To maintain a consistent rhythm throughout the grid list, truncate text content that is too long for the tile’s width.
-            Alternatively, increase the grid size so that the tiles can accommodate the longer titles.</p>
-        <br />
-        <br />
-        <h3>Responsive design</h3>
-        <p>Full-screen grid lists should use fluid image ratios with minimum and maximum widths, derived using the Ratio keylines.
-            They should retain fixed heights, margins, and padding.</p>
-        <p>Centered grid lists have fluid margins with a minimum width. They maintain fixed image widths, heights, and padding.</p>
-
-        <div id="spacer"></div>
-
-        <h2>Specs</h2>
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Grid list header/footers</h3>
-                <br />
-                <br />
-                <h3>Single-line header/footer</h3>
-                <p>Height: 48dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size: 16sp</p>
-                <p>Secondary action is flush right to the footer.</p>
-                <br />
-                <br />
-                <h3>Two-line header/footer</h3>
-                <p>Height: 68dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size: 16sp</p>
-                <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
-            </div>
-
-            <div fxFlex="760px">
-                <img src="assets/images/gridlist/components_grids_specs1.png" width="760" /><br />
-                <p>Type 14/14 </p>
-                <p>Two-line bar (with icon) height: 68dp</p>
-                <p>Two-line bar height: 68dp</p>
-                <p>Single-line bar height: 48dp</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs2.png" width="760" /><br />
-                <p>Type 16/12 </p>
-                <p>Two-line bar (with icon) height: 68dp</p>
-                <p>Two-line bar height: 68dp</p>
-                <p>Single-line bar height: 48dp</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs22.png" width="760" /><br />
-                <p>Text truncation in header/footers.</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Image-only grid list</h3>
-                <p>Grid list padding: 4dp or 1dp</p>
-                <br />
-                <br />
-
-                <p>Tiles in grid lists can span multiple columns.</p>
-                <br />
-                <br />
-
-                <p>Carefully consider whether secondary text is needed in grid lists that use multi-column tiles, as larger
-                    tiles can develop significant empty space.</p>
-
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs3.png" width="360" /><br />
-                <p>Image-only grid list</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs4.png" width="360" /><br />
-                <p>Image-only grid list photo album</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Single-line grid list</h3>
-                <br />
-                <h4>Text only</h4>
-                <p>Height: 48dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size: 16sp</p>
-                <p>Grid list padding: 4dp or 1dp</p>
-
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs5.png" width="360" /><br />
-                <p>Single-line grid list footer with 16dp padding</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs7.png" width="360" /><br />
-                <p>Single-line grid list header with 16dp padding</p>
-
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs6.png" width="360" /><br />
-                <p>Single-line grid list photo album</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Text with icon</h3>
-                <br />
-                <p>Height: 48dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size: 16sp</p>
-                <p>Grid list padding: 4dp or 1dp</p>
-                <br />
-                <p>The secondary action can be flush right or flush left within the footer or header.</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs8.png" width="360" /><br />
-                <p>Single-line grid list footer with 16dp padding and icon</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs10.png" width="360" /><br />
-                <p>Single-line grid list header with 16dp padding and icon</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs12.png" width="360" /><br />
-                <p>Single-line grid list footer with icon in photo album</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs9.png" width="360" /><br />
-                <p>Single-line grid list footer with icon</p><br />
-                <img src="assets/images/gridlist/components_grids_specs11.png" width="360" /><br />
-                <p>Single-line grid list header with icon</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Two-line grid list</h3>
-                <br />
-                <h3>Text only</h3>
-                <p>Height: 68dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
-                <p>Grid list padding: 4dp or 1dp</p>
-                <br />
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs13.png" width="360" /><br />
-                <p>Two-line grid list footer with 16dp of padding</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs15.png" width="360" /><br />
-                <p>Two-line grid list, 4dp example</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs14.png" width="360" /><br />
-                <p>Two-line grid list header with 16dp of padding</p><br />
-                <img src="assets/images/gridlist/components_grids_specs16.png" width="360" /><br />
-                <p>Two-line grid list, 1dp example</p>
-            </div>
-        </div>
-
-        <div id="spacer-no-line"></div>
-
-        <div class="guidelinesColumns">
-            <div fxFlex="360px">
-                <h3>Text with icon</h3>
-                <br />
-                <p>Height: 68dp</p>
-                <p>Text padding: 16dp</p>
-                <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
-                <br />
-                <p>The secondary action can be flush right or flush left within the footer or header.</p>
-                <br />
-                <p>Grid list padding: 4dp or 1dp</p>
-                <br />
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs17.png" width="360" /><br />
-                <p>Two-line text with icon footer</p>
-                <br />
-                <p>Text padding: 16dp</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs19.png" width="360" /><br />
-                <p>Two-line text with icon header</p>
-                <br />
-                <p>Text padding: 16dp</p>
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs21.png" width="360" /><br />
-                <p>Example of text with icon</p>
-            </div>
-
-            <div fxFlex="360px">
-                <img src="assets/images/gridlist/components_grids_specs18.png" width="360" /><br />
-                <p>Two-line text with icon</p><br />
-                <br />
-                <br />
-                <img src="assets/images/gridlist/components_grids_specs20.png" width="360" /><br />
-                <p>Two-line text with icon</p>
-            </div>
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grid_lists.png" width="360" />
         </div>
     </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<h2>Usage</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <p>A grid list is best suited to presenting homogenous data, typically images, and is optimized for visual comprehension
+                and differentiating between similar data types.</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_usage1.png" width="360" /><br />
+            <p>Example of grid list</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <p>A grid list consists of a repeated pattern of cells arrayed vertically and horizontally within the grid list.</p>
+
+            <p>Tiles hold content and can span one or more cells vertically or horizontally.</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_usage2.png" width="360" /><br />
+            <p>Example of grid list</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_usage3.png" width="360" /><br />
+            <p>Example of a cell and tile</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+            <p>If the text in tiles needs to be prominent enough to distinguish between primary content pieces, consider using
+                a different container, like a list or cards, optimized for displaying text and facilitating reading comprehension.
+                <br />
+                <br />
+
+                <h4>Lists:</h4>
+                <p>Optimized for reading comprehension, particularly when comparing a set of data containing multiple data types.
+                    </p>
+                <br />
+                <br />
+
+                <h4>Cards:</h4>
+                <p>Used for content with inconsistent formatting, such as photos with captions of variable length, or data sets
+                    with heterogeneous content, such as a mixed collection of photos and videos and books.</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer"></div>
+
+<h2>Content</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Content in tiles</h3>
+            <p>Tile content consists of primary content and secondary content. Primary content is the main differentiating element,
+                typically an image. Secondary content can be an action or text.</p>
+            <br />
+            <p>Provide a default image for tiles that lack an image for primary content.</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_content1.png" width="360" /><br />
+            <p>Example of tile content with primary and secondary actions</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Actions in tiles</h3>
+            <p>Actions on both primary and secondary content – such as play, zoom in, delete, or select – are immediate and
+                typically do not result in a submenu of options (action overflow) within the grid list.</p>
+            <br />
+            <p>Actions can open a subsequent view, such as a card.</p>
+            <br />
+            <br />
+            <h3>Primary actions</h3>
+            <ul>
+                <li>Fill the entire tile and therefore are not represented via icons or text.</li>
+                <li>Are consistent throughout tiles in a specific grid list. For example, the primary action for all tiles in
+                    a single grid list could be to view details for an image.</li>
+            </ul>
+            <br />
+            <br />
+            <h3>Secondary actions or content</h3>
+            <ul>
+                <li>Are represented in tiles with icons or text.</li>
+                <li>Are consistent throughout tiles in a specific grid list.</li>
+                <li>Are placed in a consistent location within the tiles of a specific grid list, but that consistent location
+                    may vary between grid lists (at corners or edges). For example, all titles in one grid list could be
+                    located at the bottom left corner, while all tiles in another grid list might place titles in the top
+                    left corner.</li>
+            </ul>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_content2.png" width="360" /><br />
+            <p>Example of secondary action with action and text positions</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+        </div>
+    </div>
+</div>
+
+<div id="spacer"></div>
+
+<h2>Behavior</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Scrolling</h3>
+            <p>Grid lists typically scroll only vertically.</p>
+            <br />
+            <p>Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns,
+                affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of images,
+                such as a gallery, which is compatible with typical reading patterns.</p>
+            <br />
+            <p>Cut off grid tiles in the view’s initial scroll position to communicate the scroll direction for content overflow.
+            </p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_behavior1.png" width="360" /><br />
+            <div class="do"></div>
+            <p class="do-text-color">Do.</p><br />
+            <p>Indicate content overflow by cutting off grid tiles.</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_behavior2.png" width="360" /><br />
+            <div class="dont"></div>
+            <p class="dont-text-color">Dont.</p><br />
+            <p>Avoid aligning grid tiles along a view edge in the view’s initial scroll position. This positioning doesn’t effectively
+                communicate that there is more content available.</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<h3>Gestures</h3>
+<p>Per-tile swipe actions are not permitted. Pick-up-and-move actions are discouraged.</p>
+<br/>
+<br />
+<h3>Tile filtering and sorting</h3>
+<p>Content in a grid list can be programmatically filtered or sorted by date, file size, alphabetical order, or other parameters.
+</p>
+<p>The first item in the grid list is positioned at the top left of the grid list, and the order proceeds left to right and
+    top to bottom.</p>
+<br />
+<br />
+<h3>Dimensions and resizing</h3>
+<p>Resizing a grid list causes the tiles to re-sort as horizontal space becomes available. Full-bleed grid list tiles resize
+    to fit the screen width.</p>
+<p>A grid list does not transform into a list when horizontal space contracts. Grid lists and lists are separate structures
+    for emphasizing different data types. Grid lists prioritize images over text and lists prioritize text over images.</p>
+<p>To maintain a consistent rhythm throughout the grid list, truncate text content that is too long for the tile’s width. Alternatively,
+    increase the grid size so that the tiles can accommodate the longer titles.</p>
+<br />
+<br />
+<h3>Responsive design</h3>
+<p>Full-screen grid lists should use fluid image ratios with minimum and maximum widths, derived using the Ratio keylines. They
+    should retain fixed heights, margins, and padding.</p>
+<p>Centered grid lists have fluid margins with a minimum width. They maintain fixed image widths, heights, and padding.</p>
+
+<div id="spacer"></div>
+
+<h2>Specs</h2>
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Grid list header/footers</h3>
+            <br />
+            <br />
+            <h3>Single-line header/footer</h3>
+            <p>Height: 48dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size: 16sp</p>
+            <p>Secondary action is flush right to the footer.</p>
+            <br />
+            <br />
+            <h3>Two-line header/footer</h3>
+            <p>Height: 68dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size: 16sp</p>
+            <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
+        </div>
+
+        <div fxFlex="760px">
+            <img src="assets/images/gridlist/components_grids_specs1.png" width="760" /><br />
+            <p>Type 14/14 </p>
+            <p>Two-line bar (with icon) height: 68dp</p>
+            <p>Two-line bar height: 68dp</p>
+            <p>Single-line bar height: 48dp</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs2.png" width="760" /><br />
+            <p>Type 16/12 </p>
+            <p>Two-line bar (with icon) height: 68dp</p>
+            <p>Two-line bar height: 68dp</p>
+            <p>Single-line bar height: 48dp</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs22.png" width="760" /><br />
+            <p>Text truncation in header/footers.</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Image-only grid list</h3>
+            <p>Grid list padding: 4dp or 1dp</p>
+            <br />
+            <br />
+
+            <p>Tiles in grid lists can span multiple columns.</p>
+            <br />
+            <br />
+
+            <p>Carefully consider whether secondary text is needed in grid lists that use multi-column tiles, as larger tiles
+                can develop significant empty space.</p>
+
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs3.png" width="360" /><br />
+            <p>Image-only grid list</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs4.png" width="360" /><br />
+            <p>Image-only grid list photo album</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Single-line grid list</h3>
+            <br />
+            <h4>Text only</h4>
+            <p>Height: 48dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size: 16sp</p>
+            <p>Grid list padding: 4dp or 1dp</p>
+
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs5.png" width="360" /><br />
+            <p>Single-line grid list footer with 16dp padding</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs7.png" width="360" /><br />
+            <p>Single-line grid list header with 16dp padding</p>
+
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs6.png" width="360" /><br />
+            <p>Single-line grid list photo album</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Text with icon</h3>
+            <br />
+            <p>Height: 48dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size: 16sp</p>
+            <p>Grid list padding: 4dp or 1dp</p>
+            <br />
+            <p>The secondary action can be flush right or flush left within the footer or header.</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs8.png" width="360" /><br />
+            <p>Single-line grid list footer with 16dp padding and icon</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs10.png" width="360" /><br />
+            <p>Single-line grid list header with 16dp padding and icon</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs12.png" width="360" /><br />
+            <p>Single-line grid list footer with icon in photo album</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs9.png" width="360" /><br />
+            <p>Single-line grid list footer with icon</p><br />
+            <img src="assets/images/gridlist/components_grids_specs11.png" width="360" /><br />
+            <p>Single-line grid list header with icon</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Two-line grid list</h3>
+            <br />
+            <h3>Text only</h3>
+            <p>Height: 68dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
+            <p>Grid list padding: 4dp or 1dp</p>
+            <br />
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs13.png" width="360" /><br />
+            <p>Two-line grid list footer with 16dp of padding</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs15.png" width="360" /><br />
+            <p>Two-line grid list, 4dp example</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs14.png" width="360" /><br />
+            <p>Two-line grid list header with 16dp of padding</p><br />
+            <img src="assets/images/gridlist/components_grids_specs16.png" width="360" /><br />
+            <p>Two-line grid list, 1dp example</p>
+        </div>
+    </div>
+</div>
+
+<div id="spacer-no-line"></div>
+
+<div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+    <div class="mdc-layout-grid__inner">
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <h3>Text with icon</h3>
+            <br />
+            <p>Height: 68dp</p>
+            <p>Text padding: 16dp</p>
+            <p>Default font size for each line: 16sp/12sp or 14sp/14sp</p>
+            <br />
+            <p>The secondary action can be flush right or flush left within the footer or header.</p>
+            <br />
+            <p>Grid list padding: 4dp or 1dp</p>
+            <br />
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs17.png" width="360" /><br />
+            <p>Two-line text with icon footer</p>
+            <br />
+            <p>Text padding: 16dp</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs19.png" width="360" /><br />
+            <p>Two-line text with icon header</p>
+            <br />
+            <p>Text padding: 16dp</p>
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs21.png" width="360" /><br />
+            <p>Example of text with icon</p>
+        </div>
+
+        <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            <img src="assets/images/gridlist/components_grids_specs18.png" width="360" /><br />
+            <p>Two-line text with icon</p><br />
+            <br />
+            <br />
+            <img src="assets/images/gridlist/components_grids_specs20.png" width="360" /><br />
+            <p>Two-line text with icon</p>
+        </div>
+    </div>
+</div>
+</div>

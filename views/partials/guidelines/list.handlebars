@@ -1,1 +1,745 @@
-<p>TEST!!!!!!!!!!!</p>
+<div class="guidelines">
+    <p>Lists present multiple line items vertically as a single continuous element.</p>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Lists are made up of a continuous column of rows. Each row contains a tile. Primary actions fill the tile,
+                    and supplemental actions are represented by icons and text.</p>
+                <p>Lists are best suited for similar data types.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h4>Actions</h4>
+                <br />
+                <p>Vertical Scrolling</p>
+                <p>Filtering and sorting</p>
+
+                <h4>Gestures</h4>
+                <br />
+                <p>Swipe</p>
+                <p>Drag and drop</p>
+
+                <h4>Alternatives</h4>
+                <br />
+                <p><a href="/cards">Cards</a></p>
+                <p><a href="/gridlist">Grid Lists</a></p>
+            </div>
+
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists.png" width="360" />
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Usage</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>A list consists of a single continuous column of tessellated sub-divisions of equal width called rows that
+                    function as containers for tiles.</p>
+                <p>Tiles hold content, and can vary in height within a list.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_usage1.png" width="360" /><br />
+                <p>List</p>
+            </div>
+
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_usage2.png" width="360" /><br />
+                <p>Row and tile</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Lists are best suited to presenting a homogeneous data type or sets of data types, such as images and text.
+                    They are optimized for reading comprehension while differentiating either between similar data types,
+                    or qualities within a single data type.</p>
+                <br />
+                <h3>List alternatives</h3>
+                <ul>
+                    <li>If more than three lines of text need to be shown in list tiles, use cards instead.</li>
+                    <li>If the primary distinguishing content consists of images, use a grid list.</li>
+                </ul>
+
+
+                <h3>Density</h3>
+                <p>When the mouse and keyboard are the primary input methods, measurements may be condensed to accommodate denser
+                    layouts.
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_usage3.png" width="360" /><br />
+                <p>Typical list scanning pattern</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Behavior</h2>
+    <h3>Gestures</h3>
+    <p>The swipe action of each tile should be consistent within lists.</p>
+    <p>Tiles may be moved between a list and drop target (similar to moving a file into a folder) and picked up and manually
+        reordered within a list.</p>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Filtering and sorting</h3>
+                <p>List tiles can be sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_behavior1.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Alphabetical sorting makes information easier to find.</p>
+            </div>
+
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_behavior2.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Don’t display information in random order; if the UI doesn’t allow the user to sort a list, your app should
+                    use a logical sort order.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Content</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Collections of list tiles present related content in a consistent format. Lists use hierarchy to prioritize
+                    a type or set of content, which helps users find the most important information. For example, in an email
+                    inbox app, an avatar and text snippet are emphasized over a time stamp.</p>
+
+                <p>List tiles may contain up to three lines of text, and text length may vary between tiles in the same list.
+                    To display more than three lines of text, use a card.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_content1.png" width="360" /><br />
+                <p>Place the most distinguishing content on the left of the tile and the least distinguishing content on the
+                    right.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Specifications</p>
+                <ul>
+                    <li>The majority of space on a list tile should be dedicated to the primary action.</li>
+                    <li>Place the most distinguishing content towards the left of the tile.</li>
+                    <li>In tiles with multi-line content, place the most distinguishing content in the first line.</li>
+                    <li>Place supplemental actions on the right side.</li>
+                </ul>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_content2.png" width="360" /><br />
+                <p>The primary action takes up the majority of the space on the tile. The supplemental action goes on the right
+                    side of the tile.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="spacer"></div>
+
+    <h2>Actions</h2>
+    <p>Primary and supplemental actions (such as play, zoom in, delete, and select) may open a subsequent view, such as a card.
+        They do not have a submenu or an action overflow menu.</p>
+    <br />
+    <h4>Primary actions</h4>
+    <ul>
+        <li>Fill the entire tile and are not represented solely by an individual icon or text button</li>
+        <li>Are consistent for all tiles in a specific list, such as the primary action in a list of music to play songs</li>
+    </ul>
+
+    <h4>Supplemental actions</h4>
+    <ul>
+        <li>Are represented by icons, secondary text, etc</li>
+        <li>Have consistent functionality throughout a list, such as an icon that indicates if someone is online</li>
+        <li>Have a consistent location in a list’s tiles</li>
+    </ul>
+
+    <h4>Repeating actions</h4>
+    <ul>
+        <li>Avoid displaying a repeated supplemental action in tiles, such as a share action in every tile.</li>
+        <li>Toggles, such as stars or pins, are exceptions because they provide unique information about each individual tile</li>
+    </ul>
+
+    <div id="spacer"></div>
+
+    <h2>Specs</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>In a single-line list, each tile contains a single line of text. The amount of text can vary between tiles
+                    within the same list.
+
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines1.png" width="360" /><br />
+                <h4>Single-line list specs</h4>
+                <p>Icon left padding: 16dp<br /> List item left padding: 72dp<br /> List item right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single6.png" width="360" /><br />
+                <p>Example of a single-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>In a two-line list, each tile contains a maximum of two lines of text. The amount of text can vary between
+                    tiles within the same list.
+
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines3.png" width="360" /><br />
+                <h4>Two-line list specs</h4>
+                <p>Icon left padding: 16dp<br /> List item left padding: 72dp<br /> List item right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines4.png" width="360" /><br />
+                <p>Example of a two-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>In a three-line list, each tile contains a maximum of three lines of text.</p>
+                <p>The amount of text can vary between tiles within the same list.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines5.png" width="360" /><br />
+                <h4>Three-line list specs</h4>
+                <p>Icon left padding: 16dp<br /> List item left padding: 72dp<br /> List item right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines6.png" width="360" /><br />
+                <p>Example of a three-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Single-line list</h3>
+                <h3>Text only</h3>
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+                <p>Bottom padding is measured from the baseline.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single1.png" width="360" /><br />
+                <p>Single-line list</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single3.png" width="360" /><br />
+                <p>Example of a single-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single2.png" width="360" /><br />
+                <h4>Single-line list specs</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Height: 48dp<br /> Left and right padding from screen edge: 16dp<br /> Top
+                    padding: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single2_dense.png" width="360" /><br />
+                <h4>Dense single-line list specs</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Height: 40dp<br /> Left and right padding from screen edge: 16dp<br /> Top
+                    padding: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h4>Icon with text</h4>
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+                <p>Bottom padding is measured from the baseline.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single4.png" width="360" /><br />
+                <p>Single-line list with icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single6.png" width="360" /><br />
+                <p>Example of a single-line list with icon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single5.png" width="360" /><br />
+                <h4>Single-line list with icon specs</h4><br />
+                <p>Font: Roboto Regular 16sp<br/> Height: 48dp<br/> Icon padding, left: 16dp<br/> Text padding, left: 72dp<br/>                    Top padding: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single5_dense.png" width="360" /><br />
+                <h4>Dense single-line list with icon specs</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Height: 40dp<br /> Icon padding, left: 16dp<br /> Text padding, left: 72dp<br
+                    /> Top padding: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text</h3>
+                <p>Bottom padding is measured from the baseline.</p>
+                <br />
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single7.png" width="360" /><br />
+                <p>Single-line item with avatar</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single9.png" width="360" /><br />
+                <p>Example of a single-line item with avatar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single8.png" width="360" /><br />
+                <h4>Single-line item with avatar specs</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Height: 56dp<br /> Left avatar padding: 16dp<br /> Text padding, left: 72dp<br
+                    /> Top padding: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single8_dense.png" width="360" /><br />
+                <h4>Dense single-line item with avatar specs</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Height: 48dp<br /> Left avatar padding: 16dp<br /> Text padding, left: 72dp<br
+                    /> Top padding: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text and icon</h3>
+                <p>Right icon padding: 16dp</p>
+                <br />
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+                <br />
+                <p>Bottom padding is measured from the baseline.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single10.png" width="360" /><br />
+                <p>Single-line item with avatar and icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single9.png" width="360" /><br />
+                <p>Example of a single-line item with avatar and icon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single11.png" width="360" /><br />
+                <h4>Single-line item with avatar and icon specs</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Height: 56dp<br /> Left avatar padding: 16dp<br /> Right icon padding: 16dp<br
+                    /> Text padding, left: 72dp<br /> Top padding: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_single11_dense.png" width="360" /><br />
+                <h4>Dense single-line item with avatar and icon specs</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Height: 48dp<br /> Left avatar padding: 16dp<br /> Right icon padding: 16dp<br
+                    /> Text padding, left: 72dp<br /> Top padding: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Two-line list</h3>
+                <br />
+                <h3>Text only</h3><br />
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    72dp
+                    <br /> Text padding, left: 16dp<br /> Text padding, top and bottom: 20dp</p>
+                <br />
+                <p>Bottom padding is measured from the baseline.</p><br />
+                <p>Add 8dp of padding at the top and bottom of a list. One exception is at the top of a list with a subheader,
+                    because subheaders contain their own padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two1.png" width="360" /><br />
+                <p>Two-line list</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two3.png" width="360" /><br />
+                <p>Example of a two-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two2.png" width="360" /><br />
+                <h4>Two-line list specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Height: 72dp<br /> Left and right padding from screen edge: 16dp<br /> Top
+                    padding: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two2_dense.png" width="360" /><br />
+                <h4>Dense two-line list specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Height: 60dp<br /> Left and right padding from screen edge: 16dp<br /> Top
+                    padding: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Icon with text</h3>
+                <br />
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    72dp
+                    <br /> Left icon padding: 16dp<br /> Text padding, left: 72dp<br /> Text padding, top and bottom: 20dp
+                    <br /> Bottom padding is measured from the baseline.</p>
+                <br />
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two4.png" width="360" /><br />
+                <p>Two-line list with icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two12.png" width="360" /><br />
+                <p>Example of a two-line list with icon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two5.png" width="360" /><br />
+                <h4>Two-line list with icon specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Height: 72dp<br /> Icon left padding: 16dp<br /> Text left padding: 72dp<br
+                    /> Padding above list: 8dp<br /> Text right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two5_dense.png" width="360" /><br />
+                <h4>Dense two-line list with icon specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 60dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Padding above list: 4dp<br /> Text right padding: 16dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text</h3>
+                <br />
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    72dp
+                    <br /> Left avatar padding: 16dp<br /> Text padding, left: 72dp<br /> Text padding, top and bottom: 20dp
+                </p>
+                <br />
+                <p>Bottom padding is measured from the baseline.</p>
+                <br />
+                <p>Center-align icon with text area.</p>
+                <br />
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two6.png" width="360" /><br />
+                <p>Two-line list with avatar</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two8.png" width="360" /><br />
+                <p>Example of a two-line list with avatar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two7.png" width="360" /><br />
+                <h4>Two-line list with avatar specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Tile height: 72dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Padding above list: 8dp<br /> Text right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two7_dense.png" width="360" /><br />
+                <h4>Dense two-line list with avatar specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 60dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Padding above list: 4dp<br /> Text right padding: 16dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text and icon</h3>
+                <br />
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    72dp
+                    <br /> Left avatar padding: 16dp<br /> Text padding, left: 72dp</p>
+                <br />
+                <p>Right icon padding: 16dp</p>
+                <br />
+                <p>Bottom padding is measured from the baseline.</p>
+                <br />
+                <p>Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own
+                    padding.
+                </p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two9.png" width="360" /><br />
+                <p>Avatar with text and icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two11.png" width="360" /><br />
+                <p>Example of an avatar with text and icon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two10.png" width="360" /><br />
+                <h4>Avatar with text and icon</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Tile height: 72dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Padding above list: 8dp<br /> Text right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_two10_dense.png" width="360" /><br />
+                <h4>Dense avatar with text and icon</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 60dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Padding above list: 4dp<br /> Text right padding: 16dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Three-line list</h3>
+                <h3>Text only</h3>
+                <br />
+                <p>Primary text font: Roboto Regular 16sp<br />
+                    <br /> Secondary text font: Roboto Regular 14sp<br /> Tile height: 88dp<br /> Text padding, left: 16dp<br
+                    /> Text padding, top: 16dp<br /> Text padding, bottom: 20dp<br />
+                    <br /> Bottom padding is measured from the baseline.<br />
+                    <br /> Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have
+                    their own padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three1.png" width="360" /><br />
+                <p>Three-line list</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three12.png" width="360" /><br />
+                <p>Example of a three-line list</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three2.png" width="360" /><br />
+                <h4>Three-line list specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Tile height: 88dp<br /> Text left padding: 16dp<br /> Text right padding:
+                    16dp
+                    <br /> Padding above list: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three2_dense.png" width="360" /><br />
+                <h4>Dense three-line list specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 76dp<br /> Text left padding: 16dp<br /> Text right padding:
+                    16dp
+                    <br /> Padding above list: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Icon with text</h3>
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    88dp
+                    <br /> Left icon padding: 16dp<br /> Text left padding: 72dp<br /> Text padding, top: 16dp<br /> Text
+                    padding, bottom: 20dp<br />
+                    <br /> Bottom padding is measured from the baseline.<br />
+                    <br /> Top-align icon with primary text.<br />
+                    <br /> Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have
+                    their own padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three4.png" width="360" /><br />
+                <p>Three-line list with icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three3.png" width="360" /><br />
+                <p>Example of a three-line list with icon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three5.png" width="360" /><br />
+                <h4>Three-line list with icon specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Tile height: 88dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Text padding right: 16dp<br /> Padding above list: 8dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three5_dense.png" width="360" /><br />
+                <h4>Dense three-line list with icon specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 76dp<br /> Icon left padding: 16dp<br /> Text left padding:
+                    72dp
+                    <br /> Text padding right: 16dp<br /> Padding above list: 4dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text</h3>
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    88dp
+                    <br /> Left avatar padding: 16dp<br /> Left text padding: 72dp<br /> Text padding, top: 16dp<br /> Text
+                    padding, bottom: 20dp<br />
+                    <br /> Bottom padding is measured from the baseline.<br />
+                    <br /> Top-align avatar with primary text.<br />
+                    <br /> Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have
+                    their own padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three6.png" width="360" /><br />
+                <p>Three-line list with avatar</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three8.png" width="360" /><br />
+                <p>Example of a three-line list with avatar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three7.png" width="360" /><br />
+                <h4>Three-line list with avatar specs:</h4><br />
+                <p>Font: Roboto Regular 16sp<br /> Tile height: 88dp<br /> Padding above list: 8dp<br /> Padding left of avatar:
+                    16dp
+                    <br /> Text left padding: 72dp<br /> Text right padding: 16dp</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three7_dense.png" width="360" /><br />
+                <h4>Dense three-line list with avatar specs:</h4><br />
+                <p>Font: Roboto Regular 13sp<br /> Tile height: 76dp<br /> Padding above list: 4dp<br /> Padding left of avatar:
+                    16dp
+                    <br /> Text left padding: 72dp<br /> Text right padding: 16dp</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Avatar with text and icon</h3>
+                <p>Primary text font: Roboto Regular 16sp<br /> Secondary text font: Roboto Regular 14sp<br /> Tile height:
+                    88dp<br /> Left avatar padding: 16dp<br /> Text left padding: 72dp<br /> Text padding, top: 16dp<br />                    Text padding, bottom: 20dp<br />
+                    <br /> Right icon padding: 16dp<br />
+                    <br /> Bottom padding is measured from the baseline.<br />
+                    <br /> Top-align avatar and icon with primary text.<br />
+                    <br /> Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have
+                    their own padding.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three9.png" width="360" /><br />
+                <p>Three-line list with avatar and icon</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/list/components_lists_keylines_three11.png" width="360" /><br />
+                <p>Example of a three-line list with avatar and icon</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
