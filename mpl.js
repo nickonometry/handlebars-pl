@@ -153,6 +153,12 @@ app.get('/switch', function (req, res) {
     });
 });
 
+app.get('/tabs', function (req, res) {
+    res.render('tabs', {
+        pageTitle: 'Tabs',
+    });
+});
+
 app.get('/typography', function (req, res) {
     res.render('typography', {
         pageTitle: 'Typography',

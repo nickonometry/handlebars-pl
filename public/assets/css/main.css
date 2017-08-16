@@ -369,3 +369,6 @@ body {
     padding-top: 80px;
 }
 
+.mdc-layout-grid__inner p {
+  margin-bottom: 20px;
+}
