@@ -1,0 +1,283 @@
+<style>
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+    /* Accordion styles */
+
+    .tab {
+        position: relative;
+        margin-bottom: 1px;
+        width: 100%;
+        color: #fff;
+        overflow: hidden;
+        /* :checked */
+        /* Icon styles*/
+    }
+
+    .tab .tab-input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .tab .tab-label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 3em;
+        position: relative;
+        padding: 0 16px;
+        outline: none;
+        color: inherit;
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-size: .875rem;
+        font-weight: 500;
+        letter-spacing: .04em;
+        line-height: 1.5rem;
+        text-decoration: inherit;
+        text-transform: inherit;
+        background: #ffffff;
+        font-weight: bold;
+        line-height: 3;
+        cursor: pointer;
+        color: #3d556e;
+        font-size: 1em;
+        margin-bottom: 0;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+    .tab .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height .35s;
+        -o-transition: max-height .35s;
+        transition: max-height .35s;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+    .tab .tab-content p {}
+
+    .tab .tab-content .tab {
+        padding: 10px;
+        background: #fff;
+        color: #3d556e;
+        margin: 2px 0px;
+        border-radius: 3px;
+    }
+
+    .tab .tab-content .tab label {
+        border-radius: 0;
+    }
+
+    .tab .tab-inner {
+        padding: 1px 0 0;
+    }
+
+    .tab .tab-inner label {
+        font-weight: 400;
+        background-color: #3d556e;
+        color: #fff;
+    }
+
+    .tab .tab-inner .tab-content ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tab .tab-inner .tab-content ul li {
+        list-style-type: none;
+    }
+
+    .tab .tab-inner .tab-content ul li .checkBox label {
+        background-color: transparent;
+        color: #3d556e;
+        text-transform: capitalize;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .tab .tab-inner .tab-content ul li .checkBox label:after {
+        content: "";
+    }
+
+    .tab .tab-input:checked~.tab-content {
+        max-height: 50em;
+    }
+
+    .tab .tab-label::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 3em;
+        height: 3em;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all .35s;
+        -o-transition: all .35s;
+        transition: all .35s;
+    }
+
+    .tab .tab-input[type=none]+.tab-label::after {
+        font-family: "Roboto";
+        content: "\f077";
+    }
+
+    .tab .tab-input[type=checkbox]:checked+.tab-label::after {
+        transform: rotate(180deg);
+    }
+
+    .checkbox-custom {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .checkbox-custom,
+    .checkbox-custom-label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .checkbox-custom-label {
+        position: relative;
+    }
+
+    .checkbox-custom+.checkbox-custom-label:before {
+        content: '';
+        background: transparent;
+        border: 2px solid #ddd;
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        padding: 2px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .checkbox-custom:checked+.checkbox-custom-label:before {
+        content: "\f00c";
+        font-family: 'FontAwesome';
+        color: #3498db;
+        line-height: 10px;
+    }
+</style>
+<nav class="mdc-permanent-drawer" style="background-color: #fafafa; border: 0px; z-index: 1; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);">
+    <div class="tab">
+        <input id="tab-two" class="tab-input" type="checkbox" name="tabs">
+        <label for="tab-two" class="tab-label">Components</label>
+        <div class="tab-content">
+            <div class="mdc-list-group">
+                <nav class="mdc-list">
+                    <ul class="mdc-list">
+                        <a class="mdc-list-item" href="/autocomplete">
+                        <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">autorenew</i>Autocomplete
+                    </a>
+                        <a class="mdc-list-item" href="/buttons">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">add_circle_outline</i> Buttons
+                </a>
+                        <a class="mdc-list-item" href="/buttontoggles">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">remove_circle_outline</i> Button Toggles
+                </a>
+                        <a class="mdc-list-item" href="/card">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">view_agenda</i> Card
+                </a>
+                        <a class="mdc-list-item" href="/checkbox">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">check_box</i> Checkbox
+                </a>
+                        <a class="mdc-list-item" href="/chips">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">view_agenda</i> Chips
+                </a>
+                        <a class="mdc-list-item" href="/datatable">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">view_headline</i> Data Table
+                </a>
+                        <a class="mdc-list-item" href="/datepicker">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">date_range</i> Date Picker
+                </a>
+                        <a class="mdc-list-item" href="/dialog">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">featured_video</i> Dialog
+                </a>
+                        <a class="mdc-list-item" href="/dropdownselect">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">touch_app</i> Dropdown Select
+                </a>
+                        <a class="mdc-list-item" href="/expansionpanel">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">expand_more</i> Expansion Panel
+                </a>
+                        <a class="mdc-list-item" href="/gridlist">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">grid_on</i> Grid List
+                </a>
+                        <a class="mdc-list-item" href="/linearprogress">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">linear_scale</i> Linear Progress
+                </a>
+                        <a class="mdc-list-item" href="/list">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">list</i> List
+                </a>
+                        <a class="mdc-list-item" href="/radio">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">radio_button_checked</i> Radio
+                    Buttons
+                </a> {{!-- <a class="mdc-list-item" href="/ripple">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">swap_calls</i> Ripple
+                </a> --}}
+                        <a class="mdc-list-item" href="/simplemenu">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">menu</i> Simple Menu
+                </a>
+                        <a class="mdc-list-item" href="/slider">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">timelapse</i> Slider
+                </a>
+                        <a class="mdc-list-item" href="/snackbar">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">local_dining</i> Snackbar
+                </a>
+                        <a class="mdc-list-item" href="/switch">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">switch_camera</i> Switch
+                </a>
+                        <a class="mdc-list-item" href="/tabs">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">bluetooth</i> Tabs
+                </a>
+                        <a class="mdc-list-item" href="/textfield">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">text_format</i> Text Field
+                </a>
+                        <a class="mdc-list-item" href="/toolbars">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">web_asset</i> Toolbar
+                </a>
+                        <a class="mdc-list-item" href="/typography">
+                    <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">font_download</i> Typography
+                </a>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="tab">
+        <input id="tab-three" class="tab-input" type="checkbox" name="tabs">
+        <label for="tab-three" class="tab-label">Style</label>
+        <div class="tab-content">
+            <div class="mdc-list-group">
+                <nav class="mdc-list">
+                    <ul class="mdc-list">
+                        <a class="mdc-list-item" href="/color">
+                             <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">font_download</i> Color
+                        </a>
+                        <a class="mdc-list-item" href="/typography">
+                             <i class="mdc-list-item__start-detail material-icons" aria-hidden="true">font_download</i> Typography
+                        </a>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</nav>

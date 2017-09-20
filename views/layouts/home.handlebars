@@ -14,14 +14,8 @@
 <body class="mdc-typography demo-body">
     {{>header}}
     <div class="demo-content mdc-toolbar-fixed-adjust">
-        {{>leftnav}}
-        <main class="demo-main">
-            <div class="demo-viewer">
-                <h1 class="guidelines-h1">{{pageTitle}}</h1>
-                {{>tabs}}  
-                {{{body}}}
-            </div>  
-        </main>
+            {{>leftnav}} 
+            {{{body}}}
     </div>
 
     <script src="//code.jquery.com/jquery-latest.js"></script>

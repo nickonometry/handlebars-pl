@@ -1,0 +1,87 @@
+<div class="guidelines">
+    <p style="margin-left: 22px;">Toolbar actions appear above the view affected by their actions.</p>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Toolbars appear a step above the content they affect. They may constrain their width to accommodate material
+                    passing over them.</p>
+                <p>Do not separate a toolbar’s actions by another sheet of material, unless it is transient, such as a menu
+                    or dialog.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <h3>Elevation</h3>
+                <p>Above app content</p>
+                <h3>Scrolling</h3>
+                <p>Affected content scrolls underneath toolbars.</p>
+                <h3>Dismissed content</h3>
+                <p>Sheets may temporarily cover the toolbar while moving offscreen.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/toolbar/components_toolbars.png" width="360" />
+            </div>
+        </div>
+    </div>
+
+    <h2>Usage</h2>
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Toolbars appear a step above the sheet of material affected by their actions. When sheets scroll underneath
+                    toolbars, they are clipped and cannot pass through to the opposite side.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/toolbar/layout_principles_papercraft_toolbars4.png" width="760" /><br />
+                <p>Toolbars are located a step above another sheet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Sheets can also cover the toolbar as they move offscreen.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/toolbar/layout_principles_papercraft_toolbars6.png" width="760" /><br />
+                <p>The toolbar maintains its seam until it moves off of the screen.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>A toolbar’s left and right actions are never split by another sheet of material, with the exception of temporary
+                    materials such as menus or dialogs.</p>
+                <p>Instead, toolbars can constrain their width to make space for sheets of material passing over them. The actions
+                    on the left and right cluster to stay on the same side of a toolbar.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/toolbar/layout_principles_papercraft_toolbars2.png" width="360" /><br />
+                <div class="do"></div>
+                <p class="do-text-color">Do</p>
+                <p>Constrain width to less than the full length of its material.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <img src="assets/images/toolbar/layout_principles_papercraft_toolbars3.png" width="360" /><br />
+                <div class="dont"></div>
+                <p class="dont-text-color">Don't</p>
+                <p>Never allow a sheet of material to be split by another persistent sheet of material.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo-grid mdc-layout-grid max-width mdc-layout-grid--align-left">
+        <div class="mdc-layout-grid__inner">
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                <p>Toolbars can share a seam with another sheet.</p>
+                <p>In cases where they share a seam that transforms into a step, it is called a waterfall.</p>
+            </div>
+            <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                <img src="assets/images/toolbar/layout_principles_papercraft_toolbars5.png" width="760" /><br />
+                <p>In the waterfall variant of clipping, the toolbar starts out as seamed and then lifts to form a step.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

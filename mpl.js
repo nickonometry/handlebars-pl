@@ -35,133 +35,171 @@ app.set('port', process.env.PORT || 3000);
 
 //create routes
 app.get('/', function (req, res) {
-    res.render('home')
+    res.render('home', {   
+        layout: 'home',
+    })
 });
 
 
 app.get('/autocomplete', function (req, res) {
     res.render('autocomplete', {
         pageTitle: 'Autocomplete',
+        partialVar: 'Autocomplete',     
     });
 });
 
 app.get('/buttons', function (req, res) {
     res.render('buttons', {
-        pageTitle: 'Buttons',
+        pageTitle: 'Buttons', 
+        partialVar: 'Buttons',  
     });
 });
 
 app.get('/buttontoggles', function (req, res) {
     res.render('buttontoggles', {
         pageTitle: 'Button Toggles',
+        partialVar: 'Button Toggles',
     });
 });
 
 app.get('/card', function (req, res) {
     res.render('card', {
         pageTitle: 'Card',
+        partialVar: 'Card',
     });
 });
 
 app.get('/checkbox', function (req, res) {
     res.render('checkbox', {
         pageTitle: 'Checkbox',
+        partialVar: 'Checkbox',
     });
 });
 
 app.get('/chips', function (req, res) {
     res.render('chips', {
         pageTitle: 'Chips',
+        partialVar: 'Chips',
     });
 });
 
 app.get('/datatable', function (req, res) {
     res.render('datatable', {
         pageTitle: 'Data Table',
+        partialVar: 'Data Table',
     });
 });
 
 app.get('/datepicker', function (req, res) {
     res.render('datepicker', {
         pageTitle: 'Date Picker',
+        partialVar: 'Date Picker',
     });
 });
 
 app.get('/dialog', function (req, res) {
     res.render('dialog', {
         pageTitle: 'Dialog',
+        partialVar: 'Dialog',
     });
 });
 
 app.get('/dropdownselect', function (req, res) {
     res.render('dropdownselect', {
         pageTitle: 'Dropdown Select',
+        partialVar: 'Dropdown Select',
     });
 });
 
 app.get('/expansionpanel', function (req, res) {
     res.render('expansionpanel', {
         pageTitle: 'Expansion Panel',
+        partialVar: 'Expansion Panel',
     });
 });
 
 app.get('/gridlist', function (req, res) {
     res.render('gridlist', {
         pageTitle: 'Grid List',
+        partialVar: 'Grid List',
     });
 });
 
 app.get('/linearprogress', function (req, res) {
     res.render('linearprogress', {
         pageTitle: 'Linear Progress',
+        partialVar: 'Linear Progress',
     });
 });
 
 app.get('/list', function (req, res) {
     res.render('list', {
         pageTitle: 'List',
+        partialVar: 'List',
     });
 });
 
 app.get('/radio', function (req, res) {
     res.render('radio', {
         pageTitle: 'Radio',
+        partialVar: 'Radio',
     });
 });
 
 app.get('/simplemenu', function (req, res) {
     res.render('simplemenu', {
         pageTitle: 'Simple Menu',
+        partialVar: 'Simple Menu',
     });
 });
 
 app.get('/slider', function (req, res) {
     res.render('slider', {
         pageTitle: 'Slider',
+        partialVar: 'Slider',
     });
 });
 
 app.get('/snackbar', function (req, res) {
     res.render('snackbar', {
         pageTitle: 'Snackbar',
+        partialVar: 'Snackbar',
+    });
+});
+
+app.get('/structure', function (req, res) {
+    res.render('structure', {
+        pageTitle: 'Page Layout & Structure',
+        partialVar: 'Structure',
     });
 });
 
 app.get('/switch', function (req, res) {
     res.render('switch', {
         pageTitle: 'Switch',
+        partialVar: 'Switch',
     });
 });
 
 app.get('/tabs', function (req, res) {
     res.render('tabs', {
         pageTitle: 'Tabs',
+        partialVar: 'Tabs',
+    });
+});
+
+app.get('/toolbars', function (req, res) {
+    res.render('toolbars', {
+        pageTitle: 'Toolbars',
+        partialVar: 'Toolbars',
     });
 });
 
 app.get('/typography', function (req, res) {
     res.render('typography', {
         pageTitle: 'Typography',
+        partialVar: 'Typography',
+        layout: 'notabs',
     });
 });
 
